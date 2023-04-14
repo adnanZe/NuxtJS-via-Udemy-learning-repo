@@ -29,4 +29,13 @@ ul{
     align-items: center;
     width: 80%;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover,
+a:active{
+    color: white;
+}
 </style>
