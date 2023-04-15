@@ -4,20 +4,15 @@
       <h1>Get the latest tech news!</h1>
     </section>
     <section class='featured-posts'>
-      <PostPreview id="1" thumbnail="https://picsum.photos/1000" title="Hello there!"
-        previewText="This is my first post!" />
-      <PostPreview id="2" thumbnail="https://picsum.photos/1200" title="Hello there! - second time!"
-        previewText="This is my second post!" />
-      <PostPreview id="3" thumbnail="https://picsum.photos/1300" title="Hello there! - third time!"
-        previewText="This is my third post!" />
+      <PostList />
     </section>
   </div>
 </template>
 <script>
-import PostPreview from '@/components/Posts/PostPreview';
+import PostList from '@/components/Posts/PostList';
 export default {
   components: {
-    PostPreview,
+    PostList,
   }
 }
 </script>
