@@ -4,9 +4,8 @@
       <h1>Get the latest tech news!</h1>
     </section>
     <section class='featured-posts'>
-      <PostPreview/>
-      <PostPreview/>
-      <PostPreview/>
+      <PostPreview id="1" thumbnail="https://picsum.photos/1000" title="Hello there!"
+        previewText="This is my first post!" />
     </section>
   </div>
 </template>
