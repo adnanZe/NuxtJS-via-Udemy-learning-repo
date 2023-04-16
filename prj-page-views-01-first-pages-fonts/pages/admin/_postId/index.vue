@@ -12,6 +12,7 @@ export default {
     components: {
         AdminPostForm
     },
+    layout: 'admin',
     data() {
         return {
             loadedPost: {
