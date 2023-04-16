@@ -4,7 +4,7 @@
       <h1>Get the latest tech news!</h1>
     </section>
     <section class='featured-posts'>
-      <PostList />
+      <PostList :posts="loadedPosts" />
     </section>
   </div>
 </template>
@@ -13,6 +13,15 @@ import PostList from '@/components/Posts/PostList';
 export default {
   components: {
     PostList,
+  },
+  data() {
+    return {
+      loadedPosts: [
+        { id: "1", isAdmin: true, thumbnail: "https://picsum.photos/1000", title: 'Hello there!', previewText: "This is my first post!" },
+        { id: "2", isAdmin: true, thumbnail: "https://picsum.photos/1200", title: 'Hello there! - second time!', previewText: "This is my second post!" },
+        { id: "3", isAdmin: true, thumbnail: "https://picsum.photos/1300", title: 'Hello there! - third time!', previewText: "This is my third post!" }
+      ]
+    }
   }
 }
 </script>
