@@ -24,6 +24,9 @@ export default {
       .catch(e => {
         context.error(new Error(e))
       })
+  },
+  created() {
+    this.$store.dispatch('setPosts', this.loadedPosts)
   }
 }
 </script>
