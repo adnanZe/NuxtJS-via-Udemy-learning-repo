@@ -10,6 +10,9 @@ const createStore = () => new Vuex.Store({
         }
     },
     actions: {
+        nuxtServerInit(vuexContext, context){
+            
+        },
         setPosts(vuexContext, posts){
             vuexContext.commit('setPosts', posts)
         }
