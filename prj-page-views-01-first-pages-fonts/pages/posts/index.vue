@@ -10,15 +10,6 @@ export default {
   components: {
     PostList,
   },
-  fetch(context) {
-    return new Promise((resolve, reject) => setTimeout(() => {
-      resolve()
-    }, 3000))
-      .then(data => context.store.commit('setPosts', data.loadedPosts))
-      .catch(e => {
-        context.error(new Error(e))
-      })
-  },
   computed: {
     loadedPosts() {
       return this.$store.getters.loadedPosts
