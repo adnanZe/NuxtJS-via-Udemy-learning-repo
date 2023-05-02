@@ -23,6 +23,7 @@ export default {
             required: false
         }
     },
+    emits: ['submit'],
     data() {
         return {
             editedPost: this.post ? { ...this.post } : {
@@ -36,7 +37,7 @@ export default {
     methods: {
         onSave() {
             //Save the post
-            console.log(this.editedPost);
+            this.$emit('submit', this.editedPost)
         },
         onCancel() {
             //Navigate back
