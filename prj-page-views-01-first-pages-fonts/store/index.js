@@ -11,6 +11,10 @@ const createStore = () => new Vuex.Store({
     },
     actions: {
         nuxtServerInit(vuexContext, context){
+            if(!process.client){
+                console.log(context.req.session);
+            }
+
             return new Promise((resolve, reject) => setTimeout(() => {
             vuexContext.commit('setPosts', [
               { id: "1", isAdmin: true, thumbnail: "https://picsum.photos/1000", title: 'Hello there!', previewText: "This is my first post!" },
